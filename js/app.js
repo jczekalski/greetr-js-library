@@ -1,5 +1,5 @@
 // gets a new object (the architecture allows us to not have to use the 'new' keyword here)
-var g = G$('John', 'Doe');
+const g = G$('John', 'Doe');
 
 // use our chainable methods
 g.log().greet().setLang('es').greet(true);
@@ -8,7 +8,7 @@ g.log().greet().setLang('es').greet(true);
 $('#login').click(function() {
 
   // create a new 'Greetr' object (let's pretend we know the name from the login)
-  var loginGrtr = G$('Jane', 'Doe');
+  const loginGrtr = G$('Jane', 'Doe');
 
   // hide the login on the screen
   $('#logindiv').hide();
